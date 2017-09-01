@@ -211,17 +211,6 @@ if(!class_exists("Deli_I18n_Plugin")){
 		    $t_id = $tag->term_id; // Get the ID of the term you're editing  
 		    $term_meta = get_option( "taxonomy_term_$t_id" ); // Do the check  
 		    ?>  
-		    <!-- <tr>
-		    	<td colspan="2"><span class="dashicons dashicons-translation"></span> Traductions</td>
-		    </tr>
-		    <tr>
-		    	<td><label for="langue_code">Code langue (requis)</label>  </td>
-		    	<td><input type="text" name="term_meta[langue_code]" id="term_meta[langue_code]" size="25" style="width:60%;" value="<?php echo $term_meta['langue_code'] ? $term_meta['langue_code'] : ''; ?>"></td>
-		    </tr>
-		    <tr>
-		    	<td><label for="langue_slug">Slug (requis)</label>  </td>
-		    	<td><input type="text" name="term_meta[langue_slug]" id="term_meta[langue_slug]" size="25" style="width:60%;" value="<?php echo $term_meta['langue_slug'] ? $term_meta['langue_slug'] : ''; ?>"><br />  </td>
-		    </tr> -->
 		    <tr>
 		    	<td colspan="2">
 					<?php 
@@ -250,21 +239,6 @@ if(!class_exists("Deli_I18n_Plugin")){
 		    </tr>
 	    <?php  
 	    } 
-		// A callback function to save our extra taxonomy field(s)  
-		/*public function save_taxonomy_custom_fields( $term_id ) {  
-		    if ( isset( $_POST['term_meta'] ) ) {  
-		        $t_id = $term_id;  
-		        $term_meta = get_option( "taxonomy_term_$t_id" );  
-		        $cat_keys = array_keys( $_POST['term_meta'] );  
-		            foreach ( $cat_keys as $key ){  
-		            if ( isset( $_POST['term_meta'][$key] ) ){  
-		                $term_meta[$key] = $_POST['term_meta'][$key];  
-		            }  
-		        }  
-		        //save the option array  
-		        update_option( "taxonomy_term_$t_id", $term_meta );  
-		    }  
-		} */ 
 
 		// CATEGORIES SET UP 
 		// REGISTER des custom options pour les categories 
