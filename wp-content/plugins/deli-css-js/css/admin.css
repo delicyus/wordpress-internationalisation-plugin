@@ -1,0 +1,110 @@
+
+.wrapper-not-native{
+    background: #fff;
+    padding: 1.425em;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    }
+    .wrapper-not-native label{
+        font-weight: bolder;
+        display: block
+    }
+    .wrapper-not-native .form-field{
+        background: #f0f0f0;
+        padding: 1em
+    }
+    .wrapper-not-native .form-field td,
+    .wrapper-not-native .form-field th{
+        padding: .625em 1em
+    }
+
+
+.pull-right{
+    float: right
+}
+.pull-left{
+    float: left
+}
+
+
+.scroller{
+    height: 320px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.centered{
+text-align: center
+}
+/* Emulation des class BOOTSTRAP sans bootstrap */
+
+
+.badge{
+    background: #ffffff;
+    padding: .325em
+}
+
+.col-sm-6{
+ float: left;
+ width: 50%;
+ margin: 0;
+ padding: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+/* WRAPPER VISUEL pour les parties du DOM ajout�e au HTML natif de WP */
+.notNative{
+    background: #eee;
+    color: #000;
+    border:3px dashed #ccc;
+    padding: 1em;
+}
+.notNative a{
+    text-decoration: none
+}
+.notNative li{
+    padding: .325em 0
+}
+.n{
+    display: none
+}
+.wrap{
+    padding: 2em
+}
+
+.form-row{
+    border-bottom: 1px solid #ccc;
+    padding: 1.425em
+}
+
+label{
+    font-weight: bold;
+}
+
+.form-row textarea,
+.form-row input[type="text"]{
+background: #fff;
+color: #111;
+border: 1px solid #999;
+width: 100%;
+padding: 4px;
+}
