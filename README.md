@@ -10,7 +10,7 @@
             web by delicyus.com
 
 
-# Mailchimp API Wordpress plugin #
+# Wordpress internationalisation plugin #
  
 > A wordpress allowing to translate posts, wordings, categories and menus.
 
