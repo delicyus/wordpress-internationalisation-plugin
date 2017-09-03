@@ -47,7 +47,6 @@ if(!class_exists("Deli_I18n_Plugin")){
 			add_action( 'init', array($this , 'create_wording_taxo') , 0);
 			add_action( 'langue_add_form_fields', array($this,'langue_taxonomy_custom_fields'), 10, 2 );
 			add_action( 'langue_edit_form_fields', array($this,'langue_taxonomy_custom_fields'), 10, 2 );
-			// add_action( 'edited_langue', array($this , 'save_taxonomy_custom_fields'), 10, 2 );
 
 			// HOOKS Categories
 			add_filter('deleted_term_taxonomy', array($this,'categories_remove_i18n_options') );
@@ -110,7 +109,6 @@ if(!class_exists("Deli_I18n_Plugin")){
 
 				// Set up global persistant
 		 		setlocale(LC_ALL, $WPLANG . '.utf8');
-	 			// setlocale(LC_ALL, 'en_EN.utf8');
 
 				$_SESSION['WPLANG'] 	= $WPLANG;
 				$_SESSION['CODE_LANG'] 	= $_REQUEST['lang'];
@@ -142,7 +140,6 @@ if(!class_exists("Deli_I18n_Plugin")){
 		        'has_archive' 		=> false,
 				'supports' 			=> array('title' , 'editor' ),
 				'taxonomies' 		=> array( 'langue' ),
-				// 'register_meta_box_cb'	=> array( $this , 'add_wording_metas_box') ,
 		        )
 		    );
 	    }
